@@ -1,5 +1,5 @@
 
-# This short tutorial is in two parts. Part 1 is about "sys.argv" and Part 2 about Python's module "argparse"
+### This short tutorial is in two parts. Part 1 is about "sys.argv" and Part 2 about Python's module "argparse"
 
 # Part 1: How to use "sys.argv"
 A simple documentation to simplify how to use `sys.argv` to collect arguments passed on the command line
@@ -35,9 +35,16 @@ def arg_add():
 
 arg_add()
 ```
-- Test for yoursel with:
+- Test for yourself with:
 ```bash
-$ python3 sys_argv.py 2 3 4
+$ python3 sys_argv.py 2 1 3
+```
+- Output
+```bash
+This is the name of the program: sys_argv.py
+Argument list: ['sys_argv.py', '2', '1', '3']
+Sum of ['2', '1', '3'] is: 6.0
+
 ```
 - The `arg_add()` function takes all the command line arguments (with the exception of the first item in the array(the program itself)) and add them 
 
